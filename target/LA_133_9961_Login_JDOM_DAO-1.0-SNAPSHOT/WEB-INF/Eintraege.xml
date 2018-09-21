@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<eintraege>
+    <eintrag>
+        <id>1</id>
+        <name>A</name>
+        <datum>11.09.2018 15:24</datum>
+        <nachricht>hallooo</nachricht>
+    </eintrag>
+    <eintrag>
+        <id>2</id>
+        <name>B</name>
+        <datum>11.10.2018 10:25</datum>
+        <nachricht>muster</nachricht>
+    </eintrag>
+    <eintrag>
+        <id>3</id>
+        <name>C</name>
+        <datum>11.11.2018 09:00</datum>
+        <nachricht>wolololololo</nachricht>
+    </eintrag>
+</eintraege>

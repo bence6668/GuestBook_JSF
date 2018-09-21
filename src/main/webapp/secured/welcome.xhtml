@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Secured welcome page</title>
+    	<h:outputStylesheet library="css" name="style.css"  /> 
+    </h:head>
+    <h:body>
+        <h:outputText value="Welcome, #{loginUserBean.username}!" />
+        <br/>
+        
+
+        
+        
+        <h:dataTable value="#{loginUserBean.eintraege}" var="eintrag" styleClass="order-table"
+    			headerClass="order-table-header"
+    			rowClasses="order-table-odd-row,order-table-even-row">
+
+    			<h:column>
+    				<!-- column header -->
+    				<f:facet name="header">ID</f:facet>
+    				<!-- row record -->
+    				#{eintrag.id}
+    			</h:column>
+    			
+    			<h:column>
+    				<f:facet name="header">Name</f:facet>
+    				#{eintrag.name}
+    			</h:column>
+    			
+    			<h:column>
+    				<f:facet name="header">Datum</f:facet>
+    				#{eintrag.datum}
+    			</h:column>
+    			
+    			<h:column>
+    				<f:facet name="header">Nachricht</f:facet>
+    				#{eintrag.nachricht}
+    			</h:column>
+    		
+    		</h:dataTable>
+    </h:body>
+</html>
+
